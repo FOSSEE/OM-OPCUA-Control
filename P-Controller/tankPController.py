@@ -25,8 +25,8 @@ if __name__ == "__main__":
         # print("Objects\' node is : ", objects)
 
         # Find the IDs for MV, PV
-        H_ID = 6 
-        U_ID = 8 
+        y_ID = 6 
+        u_ID = 8 
 
         modelicaId = {}
         modelicaId = objects.get_children()
@@ -39,10 +39,10 @@ if __name__ == "__main__":
 
         while True:
             # Evaluate the PV and MV 
-            PV = modelicaId[H_ID].get_value()
+            PV = modelicaId[y_ID].get_value()
             MV = Kc * (SP - PV)
             time.sleep(0.1)
-            modelicaId[U_ID].set_value(MV)
+            modelicaId[u_ID].set_value(MV)
 
             # print("H value is: ", modelicaId[H_ID].get_value())
             # print("Controller effort is: ", modelicaId[U_ID].get_value())
