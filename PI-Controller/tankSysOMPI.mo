@@ -7,7 +7,7 @@ model tankSysOMPI
   Real y(start = 0) "Plant output";
   Real error "Deviation from the setpoint"; 
   Real u "Controller effort"; 
-  Real x "state variable for controller"; 
+  Real x "State variable for controller"; 
 equation
   error = r - y; 
   der(x) = error / Ti; 
