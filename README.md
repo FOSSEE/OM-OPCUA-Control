@@ -1,7 +1,7 @@
 # OM-OPCUA-Control
 OpenModelica OPC UA framework for control applications
 
-To invoke the OPC UA server for a model (say `testModel.mo`) in OpenModelice: 
+To invoke the OPC UA server for a model (say `testModel.mo`) in OpenModelica: 
 - Launch `OMShell-terminal`. 
 - Execute: `loadModel(Modelica)`
 - Execute: `loadFile("testModel.mo")`
